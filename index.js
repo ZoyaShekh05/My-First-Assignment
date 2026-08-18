@@ -489,3 +489,97 @@ switch(choice){
                     default :
                     console.log("Invalid Choice! Please enter a number between 1 and 4.");
 }
+
+
+// // Q 29. Number Classification
+
+let num = 150;
+
+if (num > 0){
+    console.log("Positive");
+}
+else if(num < 0){
+    console.log("Negative");
+}
+else{
+    console.log("Zero");
+}
+
+// even or odd 
+
+if (num % 2 === 0){
+    console.log("Even");
+}
+else{
+    console.log("Odd");
+}
+
+// greater, less or equal to 100
+
+if (num > 100){
+    console.log("Gretaer than 100");
+}
+else if(num < 100){
+    console.log("Less than 100");
+}
+else{
+    console.log("Equal to 100");
+}
+
+// Q 30. Student Result System 
+
+
+let studentName = "Rahul";
+let rollNum = 101;
+
+let math = 95;
+let science = 88;
+let english = 72;
+
+let totalMarks = math + science + english;
+let percentage = totalMarks / 3;
+
+let grade;
+
+if (math < 40 || science < 40 || english < 40){
+    grade = "F";
+}
+
+else if (percentage >= 90){
+    grade = "A";
+}
+else if (percentage >= 80){
+    grade = "B";
+}
+else if (percentage >= 70){
+    grade = "C";
+}
+else {
+    grade = "E";
+}
+
+let result;
+
+if (math >= 40 && science >= 40 && english >= 40){
+    result = "PASS";
+}
+else{
+    result = "FAIL"
+}
+
+console.log("------------------------------------");
+console.log(" STUDENT RESULT");
+console.log("------------------------------------");
+
+console.log("Name                      :", studentName);
+console.log("Name                      :", rollNum);
+console.log("Math                      : ", math);
+console.log("Science                   : ", science);
+console.log("English                   : ", english);
+console.log("Total Marks               : ", totalMarks);
+console.log("Percentage                : ",percentage + "%");
+console.log("Grade                     : ", grade);
+console.log("--------------------------------------");
+console.log("Result                    : ", result);
+
+console.log("--------------------------------------");
